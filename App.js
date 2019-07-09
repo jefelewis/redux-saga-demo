@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 // Imports: Screens
 import Counter from './screens/Counter';
 
-// Imports: Redux Persist Persister
+// Imports: Redux Store
 import { store } from './store/store';
 
 // React Native App

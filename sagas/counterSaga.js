@@ -28,18 +28,21 @@ export function* watchIncreaseCounter() {
   yield takeLatest('INCREASE_COUNTER', increaseCounterAsync);
 }
 
-
-
 // Decrease Counter Async
 function* decreaseCounter() {
-  // Delay 4 Seconds
-  // yield delay(4000);
-
-  // Dispatch Action To Redux Store
-  yield put({ 
-    type: 'DECREASE_COUNTER_ASYNC',
-    value: 1,
-  });
+  try {
+    // Delay 4 Seconds
+    // yield delay(4000);
+  
+    // Dispatch Action To Redux Store
+    yield put({ 
+      type: 'DECREASE_COUNTER_ASYNC',
+      value: 1,
+    });
+  }
+  catch (error) {
+    console.log(error);
+  }
 }
 
 // Generator: Watch decrease Counter

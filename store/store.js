@@ -6,7 +6,7 @@ import createSagaMiddleware from 'redux-saga';
 // Imports: Redux Root Reducer
 import rootReducer from '../reducers/index';
 
-// Imports: Redux Sagas
+// Imports: Redux Root Saga
 import { rootSaga } from '../sagas/index';
 
 // Middleware: Redux Saga
@@ -17,7 +17,7 @@ const store = createStore(
   rootReducer,
   applyMiddleware(
     sagaMiddleware,
-    createLogger()
+    createLogger(),
   ),
 );
 

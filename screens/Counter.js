@@ -1,6 +1,6 @@
 // Imports: Dependencies
 import React, { Component } from 'react';
-import { Button, Dimensions, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Dimensions, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
 
 // Screen Dimensions
